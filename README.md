@@ -3,10 +3,10 @@ An Arduino adapter for RC remote control PPM signals to USB HID Joystick.
 
 Many (semi) professionl remote controls can output their control signal via a connector. Usualy the signal is [PPM](https://en.wikipedia.org/wiki/Pulse-position_modulation) modulated.
 
-If you want to train your steering skills before lifting off your RC helicopter you should consider using a RC simulator first. With this adapter-sketch you can use your original remote control on your computer.  
+If you want to train your steering skills before lifting off your RC helicopter you should consider using a RC simulator first. With this adapter-sketch you can use your original remote control as an joystick.  
 
-This sketch uses an slightly modified version of the vusb library in order to work with the Arduino framework.
-The sketch is based on the UsbJoystick demo of Michel Gutlich (example is included in library).
+This sketch uses a slightly modified version of the vusb library in order to work with the Arduino framework, added some `const` before `PROGMEM` and changed the typedef of `byte` to `uchar`.
+The sketch is based on the UsbJoystick demo from Michel Gutlich (example included in library).
 
 ###Requirements
 Arduino IDE >1.0
