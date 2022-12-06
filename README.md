@@ -8,18 +8,18 @@ If you want to train your steering skills before lifting off your RC helicopter 
 This sketch uses a slightly modified version of the vusb library in order to work with the Arduino framework, added some `const` before `PROGMEM` and changed the typedef of `byte` to `uchar`.
 The sketch is based on the UsbJoystick demo from Michel Gutlich (example included in library).
 
-###Requirements
+### Requirements
 Arduino IDE >1.0
 
-###Installation
+### Installation
 
 **You need to move the folder UsbJoystick to your sketchbook's libraries folder!**
 
-##Hardware 
+## Hardware 
 This has only been tested with boards based on the Atmega168 MCU (Arduino Duemilanove). It should work with Atmega328  boards (Arduino Uno) as well.
 
 The electric scheme included does not show all the Arduino connections and additions. It just shows a kind of bare minimum required. The voltage regulator is only required because USB signals are 3.3 V based while the USB power is 5 V.
-###Connections
+### Connections
 Arduino D2 -> USB D+ (fixed)  
 Arduino D3 -> USB D- (fixed)  
 Arduino D4 -> 1.5 kOhm -> USB D- *(optional)*  
